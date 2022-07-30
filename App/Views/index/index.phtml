@@ -1,0 +1,14 @@
+<h1>index</h1>
+<hr>
+<?php
+
+//echo'<pre>';
+//print_r($this->view->dados); //valores do banco de dados
+//echo'</pre>';
+
+foreach ($this->view->dados as $indice =>$produto){
+
+    //tratando os dados
+    echo $produto['id'].'- '.$produto['descricao'].'- '.$produto['preco'];
+    echo'<br>';
+}
